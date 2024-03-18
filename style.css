@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@media only screen and (max-width: 375px) {
+    
+    img{
+        width: 100%;
+        height: auto;
+    }
+    .recipeTitle{
+        margin: 5%;
+    }
+    
+    content > ol, ul,li{
+        margin-left:20px;
+        margin-bottom: 15px;
+    }
+    content >* {
+        margin: 20px;
+    }
+    .Preparation {
+        width: 85%;
+        display: inline-block;
+        text-align: left;
+        margin-left: 30px;
+        background-color: hsl(330, 100%, 98%);
+    }
+    
+}
