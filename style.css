@@ -1,32 +1,58 @@
+@font-face {
+    font-family: normal;
+    src: url(/assets/fonts/outfit/Outfit-VariableFont_wght.ttf);
+  }
+  @font-face {
+    font-family: titulo;
+    src: url(/assets/fonts/young-serif/YoungSerif-Regular.ttf);
+  }
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: normal;
+    color:hsl(30, 10%, 34%);
 }
-
 @media only screen and (max-width: 375px) {
-    
+    * h2,h1 {
+        font-family: titulo;
+    }
+    h1 {
+        color: hsl(24, 5%, 18%);
+    }
     img{
         width: 100%;
-        height: auto;
     }
     .recipeTitle{
         margin: 5%;
     }
-    
-    content > ol, ul,li{
+    content > ol, ul, li{
         margin-left:20px;
         margin-bottom: 15px;
     }
     content >* {
         margin: 20px;
     }
+    .Ingredients h2, .Instructions h2, .values h2{
+        color:   hsl(14, 45%, 36%);
+    }
+    .Preparation h2 {
+        color: hsl(332, 51%, 32%);
+    }
     .Preparation {
-        width: 85%;
         display: inline-block;
-        text-align: left;
         margin-left: 30px;
         background-color: hsl(330, 100%, 98%);
+        border-radius: 10px;
+    }
+    .tabela {
+        flex-direction: row;
+        display: flex;
+        justify-content: space-around;
+    }
+    .tabela td {
+        padding: 10px 45px 10px;
     }
     
 }
