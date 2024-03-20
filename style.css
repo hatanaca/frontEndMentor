@@ -77,38 +77,40 @@ img{
 
 
 @media screen and (max-width: 375px) {
+    content p,td, .Preparation li, .Instructions li,.Ingredients li {
+        font-family: normal;
+        color: hsl(30, 10%, 34%);
+    }
+
     .Preparation h3 {
         color: hsl(332, 51%, 32%);
         font-family: normal;
     }
     .Preparation li {
-        font-family: normal;
-        margin-left: 1.5rem;
-        color: hsl(24, 5%, 18%);
-        
-    }
-    .Preparation li > b{
-        margin-left: 0.7rem;
+        margin-left: -1.5rem;        
     }
     .Preparation  {
-        letter-spacing: 1px;
         display: block;
         background-color: hsl(330, 100%, 98%);
-        margin: 0 1.25rem;
         border-radius: 0.62rem; 
         padding: 0.125rem;
     }
     
     .Instructions ol{
-        border-bottom: 1px solid hsl(24, 5%, 18%);
+        left: -55px;
     }
-    .Instructions{
-        list-style-position: outside;
+    .Instructions li::before {
+        position: absolute;
+        left: -55px;
     }
-    .Ingredients li, .Instructions li{
+    .Instructions li {
+            position: relative;
+            left: -1.25rem;
+    }
+
+    .Ingredients li{
         list-style-position: outside;
         text-indent: 0.60rem;
-        color: hsl(24, 5%, 18%);
         font-family: normal;
     }
     .Ingredients h2, .Instructions h2, .values h2, .calorias{
@@ -145,4 +147,7 @@ img{
     .tabela td {
         padding: 0.625rem 2.81rem 0.62rem
     }
+    .calorias{
+        font-weight: 600;        
+        }
 }
